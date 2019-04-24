@@ -30,6 +30,17 @@ Park.prototype.mostPopularDino = function(){
 //   Dinosaur.clear()
 // }
 
+Park.prototype.calculateVisitorsTotal = function(){
+  let total = 0;
+
+  for (const dinosaur of this.collection){
+    total += dinosaur.guestsAttractedPerDay;
+  }
+
+  return total;
+
+};
+
 }
 
 module.exports = Park

@@ -70,4 +70,16 @@ describe('Park', function() {
   // let actual = park.deleteBySpecies("T-REX");
   // assert.deepStrictEqual(2, actual.length)
   //
+
+  it('should be able to calculate total no of visitors per day', function(){
+      park.addDinosaur(dinosaur);
+      park.addDinosaur(dinosaur2);
+      const expected = 150;
+      assert.strictEqual(park.calculateVisitorsTotal(), expected);
+  });
+
+  it('should be able to calculate total number of visitors per year');
+
+  it('should be able to calculate total revenue from ticket sales per year')
+
 });
